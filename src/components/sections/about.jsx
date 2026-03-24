@@ -25,9 +25,9 @@ const rightImages = [
 
 export default function About({ id }) {
   return (
-    <section id={id} className="bg-white py-26">
+    <section id={id} className=" py-26">
     
-      <div className="max-w-7xl mx-auto px-6 md:px-16">
+      <div className="max-w-8xl mx-auto px-6 md:px-36">
 
         <div className="grid md:grid-cols-2 gap-12">
 
@@ -37,19 +37,19 @@ export default function About({ id }) {
             {/* TEXT */}
             <div>
               <div className="inline-block mb-3">
-                <h2 className="text-2xl md:text-3xl font-semibold text-[#111827]">
+                <h2 className="text-2xl md:text-3xl font-semibold text-[#000000]">
                   {leftData.title}
                 </h2>
-                <div className="w-full h-[3px] bg-green-500 mt-2 rounded-full"></div>
+                <div className="w-full h-0.75 bg-linear-to-r from-[#FFFFFF] to-[#10B981] mt-2 rounded-full"></div>
               </div>
 
-              <p className="text-[#6b7280] text-sm md:text-base leading-relaxed max-w-md">
+              <p className="text-[#000000] text-sm md:text-base leading-relaxed max-w-md">
                 {leftData.desc}
               </p>
             </div>
 
             {/* SMALL IMAGE */}
-            <div className="relative h-[200px] rounded-2xl overflow-hidden">
+            <div className="relative h-50 rounded-2xl overflow-hidden">
               <Image
                 src={leftData.image}
                 alt=""
@@ -58,8 +58,8 @@ export default function About({ id }) {
               />
 
               {/* ✅ BIGGER OVERLAY */}
-              <div className="absolute inset-0 bg-black/30 flex items-end p-5">
-                <p className="text-white text-sm">
+              <div className="absolute inset-0  flex items-end p-5">
+                <p className="text-[#FFFFFF] text-sm">
                   {leftData.caption}
                 </p>
               </div>
@@ -73,7 +73,7 @@ export default function About({ id }) {
             {/* LEFT COLUMN */}
             <div className="flex flex-col gap-6">
               {rightImages.slice(0, 2).map((item, i) => (
-                <div key={i} className="relative h-[200px] rounded-2xl overflow-hidden">
+                <div key={i} className="relative h-50 rounded-2xl overflow-hidden">
                   <Image
                     src={item.img}
                     alt=""
@@ -82,8 +82,8 @@ export default function About({ id }) {
                   />
 
                   {/* ✅ BIGGER OVERLAY */}
-                  <div className="absolute inset-0 bg-black/30 flex items-end p-5">
-                    <p className="text-white text-sm">
+                  <div className="absolute inset-0  flex items-end p-5">
+                    <p className="text-[#FFFFFF] text-sm">
                       {item.text}
                     </p>
                   </div>
@@ -92,7 +92,7 @@ export default function About({ id }) {
             </div>
 
             {/* RIGHT TALL IMAGE */}
-            <div className="relative rounded-2xl overflow-hidden min-h-[420px]">
+            <div className="relative rounded-2xl overflow-hidden min-h-105">
               <Image
                 src={rightImages[2].img}
                 alt=""
@@ -101,7 +101,7 @@ export default function About({ id }) {
               />
 
               {/* ✅ BIGGER OVERLAY */}
-              <div className="absolute inset-0 bg-black/30 flex items-end p-6">
+              <div className="absolute inset-0  flex items-end p-6">
                 <p className="text-white  text-sm">
                   {rightImages[2].text}
                 </p>

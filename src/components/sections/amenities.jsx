@@ -13,7 +13,7 @@ const amenities = [
 
 export default function Amenities({ id }) {
   return (
-    <section id={id} className="bg-[#E6F1ED] py-26">
+    <section id={id} className="bg-[#b4ebd8] opacity-80 md:py-10">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -22,10 +22,10 @@ export default function Amenities({ id }) {
             <h2 className="text-2xl md:text-3xl font-semibold text-black">
               Facilities & Amenities
             </h2>
-            <div className="w-full h-[3px] bg-green-500 mt-2 rounded-full"></div>
+            <div className="w-full h-0.75 bg-linear-to-r from-[#FFFFFF] to-[#10B981] mt-2 rounded-full"></div>
           </div>
 
-          <p className="text-gray-600 mt-4 text-sm md:text-base">
+          <p className="text-[#000000] mt-4 text-sm md:text-lg">
             Modern facilities designed for a relaxing and hassle-free stay.
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function Amenities({ id }) {
             <div
               key={index}
               className="bg-white rounded-2xl p-6 text-center shadow-sm 
-                         border-b-4 border-r-4 border-green-500 
+                         border-b-4 border-r-4 border-[#10B981] 
                          hover:shadow-md transition"
             >
               {/* Icon */}

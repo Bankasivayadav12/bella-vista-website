@@ -39,7 +39,7 @@ function ImageCard({ img, text, position = "bottom" }) {
 
 export default function Accommodation({ id }){
   return (
-     <section id={id} className="bg-white py-26">
+     <section id={id} className="bg-white mb-10 -md:py-10">
 
     
     
@@ -50,13 +50,13 @@ export default function Accommodation({ id }){
           
            <div className="inline-block mb-3">
                 <h2 className="text-2xl md:text-3xl font-semibold text-[#111827] text-center">
-                    About Accommodation
+                    Our Accommodation
                 </h2>
 
-                <div className="w-full h-0.75 bg-green-500 mt-2"></div>
+                <div className="w-full h-0.75 bg-linear-to-r from-[#FFFFFF] to-[#10B981] mt-2 rounded-full"></div>
                 </div>
 
-          <p className="text-gray-500 mt-3 max-w-2xl mx-auto text-sm">
+          <p className="text-[#000000] mt-3 max-w-2xl mx-auto text-sm">
             Bella Vista Extended Stay offers five beautifully designed air-conditioned rooms with modern interiors, attached bathrooms, and private balconies overlooking the river.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function Accommodation({ id }){
               position="bottom"
             />
             <ImageCard
-              img="/images/acc4.png"
+              img="/images/acc 2.png"
               text="Relaxing balcony views"
               position="bottom"
             />
@@ -81,12 +81,12 @@ export default function Accommodation({ id }){
           {/* MIDDLE COLUMN */}
           <div className="flex flex-col gap-10 mt-10">
             <ImageCard
-              img="/images/acc 2.png"
+              img="/images/acc3.png"
               text="Comfortable beds"
               position="top"
             />
             <ImageCard
-              img="/images/acc5.png"
+              img="/images/acc4.png"
               text="Modern interiors"
               position="top"
             />
@@ -95,7 +95,7 @@ export default function Accommodation({ id }){
           {/* RIGHT COLUMN */}
           <div className="flex flex-col gap-10">
             <ImageCard
-              img="/images/acc3.png"
+              img="/images/acc5.png"
               text="Attached bathrooms"
               position="bottom"
             />

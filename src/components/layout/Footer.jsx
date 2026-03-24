@@ -1,90 +1,109 @@
+"use client";
+
 import Image from "next/image";
-import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaFacebookF } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaFacebookF,
+} from "react-icons/fa";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 
-export default function Footer({id}) {
+export default function Footer({ id }) {
   return (
-    <footer id={id} className="bg-[#ffffff] pt-26">
+    <footer id={id} className="bg-white pt-16 md:pt-20 lg:pt-24">
 
       {/* 🟩 Tagline */}
-      <h2 className="text-center text-green-600 text-xl md:text-2xl font-medium mb-10 px-4">
+      <h2 className="text-center text-[#10B981] text-lg sm:text-xl md:text-2xl font-medium mb-8 md:mb-10 px-4">
         Escape the busy city life and enjoy the peaceful charm of the backwaters.
       </h2>
 
-      {/* ⬜ FULL WIDTH CARD */}
-      <div className="bg-[#eeeeee] rounded-t-[60px] px-6 md:px-16 py-10 md:py-14 flex flex-col md:flex-row gap-10 items-center md:items-start">
+      {/* ⬜ MAIN CARD */}
+      <div className="bg-[#92929299] rounded-t-[40px] md:rounded-t-[60px] 
+      px-5 sm:px-8 md:px-16 py-8 md:py-12 lg:py-14 
+      flex flex-col lg:flex-row gap-5 lg:gap-10 items-start">
 
-        {/* 🟨 LEFT */}
-        <div className="flex-1 space-y-6">
+        {/* 🟨 LEFT SECTION */}
+        <div className="flex-1 space-y-6 w-full">
 
           {/* Logo */}
           <Image
             src="/images/logo.png"
             alt="Bella Vista"
-            width={200}
-            height={70}
+            width={180}
+            height={60}
+            className="w-35 sm:w-40 md:w-45 h-auto"
           />
 
           {/* Description */}
-          <p className="text-gray-600 text-[16px] leading-relaxed max-w-lg">
+          <p className="text-[#000000] text-sm sm:text-base leading-relaxed ">
             Bella Vista Extended Stay offers a relaxing riverfront experience where comfort meets nature.
           </p>
 
           {/* Contact */}
-          <div className="space-y-5 text-[16px] text-[#111827]">
+          <div className="space-y-4 text-sm sm:text-base text-[#111827]">
 
-            <div className="flex items-center gap-4">
-              <FaPhoneAlt className="text-green-600 text-xl" />
-              <span>+91 91870 89909</span>
+            <div className="flex items-start gap-3">
+              <FaPhoneAlt className="text-[#10B981] text-lg mt-1" />
+              <span className="text-[#000000]">+91 91870 89909</span>
             </div>
 
-            <div className="flex items-center gap-4">
-              <FaMapMarkerAlt className="text-green-600 text-xl" />
-              <span>Hoode, Near Bengre Backwaters, Udupi</span>
+            <div className="flex items-start gap-3">
+              <FaMapMarkerAlt className="text-[#10B981] text-lg mt-1" />
+              <span className="text-[#000000]">
+                BellaVista Extended stay, #17/17, Padu Thonse, Bengre.<br />
+                Udupi District - 576115, Karnataka, India
+              </span>
             </div>
 
-            <div className="flex items-center gap-4">
-              <FaEnvelope className="text-green-600 text-xl" />
-              <span>bellavistaextendedstay@gmail.com</span>
+            <div className="flex items-start gap-3">
+              <FaEnvelope className="text-[#10B981] text-lg mt-1" />
+              <span className="text-[#000000]">bellavistaextendedstay@gmail.com</span>
             </div>
 
-            <div className="flex items-center gap-4">
-              <FaInstagram className="text-green-600 text-xl" />
+            {/* Instagram */}
+            <a
+              href="https://instagram.com/bellavistaextendedstay"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 hover:text-green-700 transition"
+            >
+              <FaInstagram className="text-[#10B981] text-lg" />
               <span>/ bellavistaextendedstay</span>
-            </div>
-
+            </a>
           </div>
 
-          {/* Social */}
-          <div className="flex gap-4 pt-2">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1877F2] text-white">
+          {/* Social Icons */}
+          <div className="flex gap-3 pt-2">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[#1877F2] text-white cursor-pointer">
               <FaFacebookF />
             </div>
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-black text-white cursor-pointer">
               <FaXTwitter />
             </div>
           </div>
         </div>
 
         {/* 🟦 RIGHT MAP */}
-        
-          <div className="">
-            <Image
-              src="/images/map.png"
-              alt="map"
-              width={600}
-              height={400}
-              className=""
-            />
-         
-        </div>
+        <div className="w-full lg:w-[50%]">
+  <div className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-xl overflow-hidden">
+    <iframe
+      src="https://www.google.com/maps?q=BellaVista+Extended+Stay+Udupi&output=embed"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
       </div>
 
       {/* 🟩 Bottom Bar */}
-      <div className="bg-green-600 text-white text-center py-3 text-sm">
-        All Rights Reserved
+      <div className="bg-green-600 text-white text-center py-3 text-xs sm:text-sm">
+        © 2026 Bella Vista Extended Stay. All Rights Reserved.
       </div>
-
     </footer>
   );
 }

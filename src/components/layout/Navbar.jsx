@@ -19,42 +19,42 @@ export default function Navbar() {
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-[#FFFFFF] border-b border-[#d6d6d6]">
         <nav className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16">
-          
+
           {/* Logo */}
           <div
             onClick={() => scrollToSection("home")}
             className="cursor-pointer"
           >
             <div onClick={() => scrollToSection("hero")} className="cursor-pointer">
-            <Image
+              <Image
                 src="/images/logo.png"
                 alt="Bella Vista Logo"
                 width={140}
                 height={40}
                 priority
-            />
+              />
             </div>
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center gap-6 text-[15px] font-medium text-[#2b2b2b]">
-  {[
-    { id: "about", label: "About Us" },
-    { id: "accommodation", label: "Accommodation" },
-    { id: "amenities", label: "Amenities" },
-    { id: "nearby", label: "Nearby Attractions" },
-    { id: "gallery", label: "Gallery" },
-    { id: "contact", label: "Contact" },
-  ].map((item) => (
-    <li
-      key={item.id}
-      onClick={() => scrollToSection(item.id)}
-      className="cursor-pointer px-4 py-2 rounded-xl transition-all duration-300 hover:bg-blue-500 hover:text-white"
-    >
-      {item.label}
-    </li>
-  ))}
-</ul>
+          <ul className="hidden md:flex items-center gap-6 text-[15px] font-normal text-[#000000]">
+            {[
+              { id: "about", label: "About Us" },
+              { id: "accommodation", label: "Accommodation" },
+              { id: "amenities", label: "Amenities" },
+              { id: "nearby", label: "Nearby Attractions" },
+              { id: "gallery", label: "Gallery" },
+              { id: "contact", label: "Contact" },
+            ].map((item) => (
+              <li
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="cursor-pointer px-4 py-2 rounded-xl transition-all duration-300 hover:bg-blue-500 hover:text-white"
+              >
+                {item.label}
+              </li>
+            ))}
+          </ul>
 
           {/* Hamburger */}
           <div
@@ -76,9 +76,8 @@ export default function Navbar() {
 
       {/* Sidebar Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white z-50 transform transition-transform duration-300 ${
-          open ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-0 left-0 h-full w-64 bg-white z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         {/* Close Button */}
         <div className="flex justify-end p-4">

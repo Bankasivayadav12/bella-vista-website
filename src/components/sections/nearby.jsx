@@ -1,26 +1,26 @@
 import Image from "next/image";
 
 const places = [
-  { img: "/images/n1.png", title: "Malpe Beach", type: "wide" },
-  { img: "/images/n2.png", title: "St. Mary's Island", type: "small" },
-  { img: "/images/n3.png", title: "Udupi Sri Krishna Temple", type: "small" },
-  { img: "/images/n4.png", title: "Delta Beach", type: "small" },
-  { img: "/images/n5.png", title: "Malpe Sea Walk", type: "small" },
-  { img: "/images/n6.png", title: "Bengre Backwaters", type: "wide" },
+  { img: "/images/malpa_beach.png", title: "Malpe Beach", type: "wide" },
+  { img: "/images/marys_island.png", title: "St. Mary's Island", type: "small" },
+  { img: "/images/temple.jpg", title: "Udupi Sri Krishna Temple", type: "small" },
+  { img: "/images/delta_beach.png", title: "Delta Beach", type: "small" },
+  { img: "/images/malpa_sea.png", title: "Malpe Sea Walk", type: "small" },
+  { img: "/images/bengre.jpg", title: "Bengre Backwaters", type: "wide" },
 ];
 
 export default function NearbyAttractionsid ({id}) {
   return (
-    <section id={id} className="bg-[#f5f5f5] py-26">
+    <section id={id} className="bg-[#f5f5f5] py-26 md:py-10">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
         <div className="mb-10">
           <div className="inline-block">
-            <h2 className="text-2xl md:text-3xl font-semibold text-black">
+            <h2 className="text-2xl md:text-3xl font-bold text-black">
               Nearby Attractions
             </h2>
-            <div className="w-full h-0.75 bg-green-500 mt-2 rounded-full"></div>
+            <div className="w-full h-0.75 bg-linear-to-r from-[#FFFFFF] to-[#10B981] mt-2 rounded-full"></div>
           </div>
 
           <p className="text-gray-600 mt-3 text-sm md:text-base">

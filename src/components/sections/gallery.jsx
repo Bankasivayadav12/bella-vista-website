@@ -10,11 +10,11 @@ const images = [
   "/images/g-4.png",
   "/images/g5.png",
   "/images/g-6.png",
-  "/images/n4.png",
-   "/images/g-6.png",
-  "/images/n4.png",
-   "/images/g-6.png",
-  "/images/n4.png",
+  "/images/acc4.png",
+  "/images/acc 6.png",
+  "/images/acc 1.png",
+  "/images/acc3.png",
+  
 ];
 
 export default function Gallery({ id }) {
@@ -31,7 +31,7 @@ export default function Gallery({ id }) {
   };
 
   return (
-    <section id={id}  className="bg-[#f5f5f5] py-16">
+    <section id={id}  className="bg-[#f5f5f5] py-16 md:py-5">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* ✅ HEADING */}
@@ -40,7 +40,7 @@ export default function Gallery({ id }) {
             <h2 className="text-2xl md:text-3xl font-semibold text-[#111827]">
               Gallery
             </h2>
-            <div className="w-full h-[3px] bg-green-500 mt-2 rounded-full"></div>
+            <div className="w-full h-0.75 bg-linear-to-r from-[#FFFFFF] to-[#10B981] mt-2 rounded-full"></div>
           </div>
 
           {/* SUBTEXT */}
@@ -50,7 +50,7 @@ export default function Gallery({ id }) {
         </div>
 
         {/* BIG IMAGE */}
-        <div className="relative max-w-3xl mx-auto h-[400px] md:h-[500px] rounded-2xl overflow-hidden mb-8">
+        <div className="relative max-w-3xl mx-auto h-100 md:h-125 rounded-2xl overflow-hidden mb-8">
             <Image
                 src={images[current]}
                 alt="gallery"
@@ -71,15 +71,15 @@ export default function Gallery({ id }) {
           </button>
 
           {/* THUMBNAILS */}
-          <div
-            ref={scrollRef}
-            className="flex gap-4 overflow-x-auto scrollbar-hide px-12"
-          >
+   <div
+  ref={scrollRef}
+  className="flex gap-4 overflow-x-auto px-12 no-scrollbar"
+>
             {images.map((img, index) => (
               <div
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`relative min-w-[100px] h-[80px] rounded-xl overflow-hidden cursor-pointer border-2 ${
+                className={`relative min-w-25 h-20 rounded-xl overflow-hidden cursor-pointer border-2 ${
                   current === index
                     ? "border-green-500"
                     : "border-transparent"
