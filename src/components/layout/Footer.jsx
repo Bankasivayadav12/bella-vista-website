@@ -12,20 +12,20 @@ import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 export default function Footer({ id }) {
   return (
     <footer id={id} className="bg-white pt-16 md:pt-20 lg:pt-24">
-
       {/* 🟩 Tagline */}
       <h2 className="text-center text-[#10B981] text-lg sm:text-xl md:text-2xl font-medium mb-8 md:mb-10 px-4">
-        Escape the busy city life and enjoy the peaceful charm of the backwaters.
+        Escape the busy city life and enjoy the peaceful charm of the
+        backwaters.
       </h2>
 
       {/* ⬜ MAIN CARD */}
-      <div className="bg-[#92929299] rounded-t-[40px] md:rounded-t-[60px] 
+      <div
+        className="bg-[#92929299] rounded-t-[40px] md:rounded-t-[60px] 
       px-5 sm:px-8 md:px-16 py-8 md:py-12 lg:py-14 
-      flex flex-col lg:flex-row gap-5 lg:gap-10 items-start">
-
+      flex flex-col lg:flex-row gap-5 lg:gap-10 items-start"
+      >
         {/* 🟨 LEFT SECTION */}
         <div className="flex-1 space-y-6 w-full">
-
           {/* Logo */}
           <Image
             src="/images/logo.png"
@@ -37,12 +37,12 @@ export default function Footer({ id }) {
 
           {/* Description */}
           <p className="text-[#000000] text-sm sm:text-base leading-relaxed ">
-            Bella Vista Extended Stay offers a relaxing riverfront experience where comfort meets nature.
+            Bella Vista Extended Stay offers a relaxing riverfront experience
+            where comfort meets nature.
           </p>
 
           {/* Contact */}
           <div className="space-y-4 text-sm sm:text-base text-[#111827]">
-
             <div className="flex items-start gap-3">
               <FaPhoneAlt className="text-[#10B981] text-lg mt-1" />
               <span className="text-[#000000]">+91 91870 89909</span>
@@ -51,14 +51,17 @@ export default function Footer({ id }) {
             <div className="flex items-start gap-3">
               <FaMapMarkerAlt className="text-[#10B981] text-lg mt-1" />
               <span className="text-[#000000]">
-                BellaVista Extended stay, #17/17, Padu Thonse, Bengre.<br />
+                BellaVista Extended stay, #17/17, Padu Thonse, Bengre.
+                <br />
                 Udupi District - 576115, Karnataka, India
               </span>
             </div>
 
             <div className="flex items-start gap-3">
               <FaEnvelope className="text-[#10B981] text-lg mt-1" />
-              <span className="text-[#000000]">bellavistaextendedstay@gmail.com</span>
+              <span className="text-[#000000]">
+                bellavistaextendedstay@gmail.com
+              </span>
             </div>
 
             {/* Instagram */}
@@ -66,8 +69,7 @@ export default function Footer({ id }) {
               href="https://instagram.com/bellavistaextendedstay"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 hover:text-green-700 transition"
-            >
+              className="flex items-center gap-3 hover:text-green-700 transition" >
               <FaInstagram className="text-[#10B981] text-lg" />
               <span>/ bellavistaextendedstay</span>
             </a>
@@ -86,18 +88,17 @@ export default function Footer({ id }) {
 
         {/* 🟦 RIGHT MAP */}
         <div className="w-full lg:w-[50%]">
-  <div className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-xl overflow-hidden">
-    <iframe
-      src="https://www.google.com/maps?q=BellaVista+Extended+Stay+Udupi&output=embed"
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
-</div>
+          <div className="w-full h-62.5 sm:h-75 md:h-87.5 lg:h-100 rounded-xl overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps?output=embed&q=13.423189163208008,74.69575500488281"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
 
       {/* 🟩 Bottom Bar */}

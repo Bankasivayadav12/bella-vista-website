@@ -62,12 +62,7 @@ export default function Hero({ id }) {
               el.scrollIntoView({ behavior: "smooth" });
             }
           }}
-          className="bg-[#10B981] hover:bg-green-700 text-white 
-  px-6 py-3 md:px-10 md:py-4 lg:px-40 lg:py-6
-  text-sm md:text-lg lg:text-xl font-semibold
-  shadow-lg transition 
-  rounded-bl-full rounded-br-full rounded-tl-full rounded-tr-none"
-        >
+          className="bg-[#10B981] hover:bg-green-700 text-white px-6 py-3 md:px-10 md:py-4 lg:px-40 lg:py-6 text-sm md:text-lg lg:text-xl font-semibold shadow-lg transition rounded-bl-full rounded-br-full rounded-tl-full rounded-tr-none">
           Contact Now
         </button>
       </div>
