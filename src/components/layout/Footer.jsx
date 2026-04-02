@@ -102,7 +102,7 @@ export default function Footer({ id }) {
       </div>
 
       {/* 🟩 Bottom Bar */}
-      <div className="bg-green-600 text-white text-center py-3 text-xs sm:text-sm">
+      <div className="bg-[#10B981] text-white text-center py-3 text-xs sm:text-sm">
         © 2026 Bella Vista Extended Stay. All Rights Reserved.
       </div>
     </footer>
