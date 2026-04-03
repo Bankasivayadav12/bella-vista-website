@@ -43,7 +43,7 @@ export default function About({ id }) {
                 <div className="w-full h-0.75 bg-linear-to-r from-[#FFFFFF] to-[#10B981] mt-2 rounded-full"></div>
               </div>
 
-              <p className="text-[#000000] text-sm md:text-base leading-relaxed max-w-md">
+              <p className="text-[#000000] text-sm md:text-base leading-relaxed max-w-2xl">
                 {leftData.desc}
               </p>
             </div>
