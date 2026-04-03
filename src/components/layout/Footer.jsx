@@ -7,6 +7,7 @@ import {
   FaEnvelope,
   FaFacebookF,
 } from "react-icons/fa";
+
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function Footer({ id }) {
@@ -64,26 +65,43 @@ export default function Footer({ id }) {
               </span>
             </div>
 
-            {/* Instagram */}
-            <a
-              href="https://instagram.com/bellavistaextendedstay"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 hover:text-green-700 transition" >
-              <FaInstagram className="text-[#10B981] text-lg" />
-              <span>/ bellavistaextendedstay</span>
-            </a>
+            
           </div>
 
           {/* Social Icons */}
           <div className="flex gap-3 pt-2">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[#1877F2] text-white cursor-pointer">
-              <FaFacebookF />
-            </div>
-            <div className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-black text-white cursor-pointer">
-              <FaXTwitter />
-            </div>
-          </div>
+
+  {/* Facebook */}
+  <a
+    href="https://www.facebook.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[#1877F2] text-white cursor-pointer hover:scale-110 transition"
+  >
+    <FaFacebookF />
+  </a>
+
+  {/* Twitter (X) */}
+  <a
+    href="https://twitter.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-black text-white cursor-pointer hover:scale-110 transition"
+  >
+    <FaXTwitter />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://instagram.com/bellavistaextendedstay"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white cursor-pointer hover:scale-110 transition"
+  >
+    <FaInstagram />
+  </a>
+
+</div>
         </div>
 
         {/* 🟦 RIGHT MAP */}

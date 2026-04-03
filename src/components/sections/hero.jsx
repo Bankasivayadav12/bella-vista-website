@@ -44,15 +44,21 @@ export default function Hero({ id }) {
         </div>
       </div>
 
-      {/* BUTTON → RIGHT BOTTOM */}
       {/* 📱 MOBILE → full width bottom */}
       <div className="absolute bottom-0 left-0 w-full md:hidden z-20">
-  <Link href="/contact">
-    <button className="w-full md:w-[80%] lg:w-[50%] xl:w-[60%] 
-    mx-auto block bg-[#10B981] text-white py-4 text-base font-medium rounded-lg">
-      Contact Now
-    </button>
-  </Link>
+  <button
+    onClick={() => {
+      const el = document.getElementById("contact");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }}
+    className="w-full md:w-[80%] lg:w-[50%] xl:w-[60%] 
+    mx-auto block bg-[#10B981] text-white py-4 text-base font-medium shadow-lg transition 
+    rounded-bl-full rounded-br-full rounded-tl-full rounded-tr-none"
+  >
+    Contact Now
+  </button>
 </div>
 
 <div className="hidden md:block absolute bottom-0 right-6 lg:right-12 z-20">
@@ -70,7 +76,8 @@ export default function Hero({ id }) {
     xl:px-14 xl:py-5 
     text-sm md:text-base lg:text-lg xl:text-xl 
     font-semibold shadow-lg transition 
-    rounded-bl-full rounded-br-full rounded-tl-full rounded-tr-none">
+    rounded-bl-full rounded-br-full rounded-tl-full rounded-tr-none"
+  >
     Contact Now
   </button>
 </div>

@@ -13,8 +13,8 @@ const amenities = [
 
 export default function Amenities({ id }) {
   return (
-    <section id={id} className="bg-[#b4ebd8] opacity-80 md:py-10">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id={id} className="bg-[#b4ebd8] opacity-80 md:py-10 ">
+      <div className="max-w-7xl mx-auto px-6 py-10">
 
         {/* Heading */}
         <div className="text-center mb-12">
