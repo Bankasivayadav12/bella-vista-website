@@ -18,26 +18,28 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-[#FFFFFF] border-b border-[#d6d6d6]">
-        <nav className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16">
+        <nav className="max-w-[1400px] mx-auto 
+        px-6 sm:px-8 md:px-12 lg:px-16 
+        flex items-center justify-between h-16">
 
           {/* Logo */}
           <div
-            onClick={() => scrollToSection("home")}
+            onClick={() => scrollToSection("hero")}
             className="cursor-pointer"
           >
-            <div onClick={() => scrollToSection("hero")} className="cursor-pointer -ml-15">
-              <Image
-                src="/images/logo.png"
-                alt="Bella Vista Logo"
-                width={140}
-                height={40}
-                priority
-              />
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="Bella Vista Logo"
+              width={140}
+              height={40}
+              priority
+            />
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center gap-4 text-[15px] font-normal text-[#000000]">
+          <ul className="hidden md:flex items-center 
+          gap-2 lg:gap-4 
+          text-[15px] font-normal text-[#000000]">
             {[
               { id: "about", label: "About Us" },
               { id: "accommodation", label: "Accommodation" },
@@ -49,7 +51,9 @@ export default function Navbar() {
               <li
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="cursor-pointer px-4 py-2 rounded-xl transition-all duration-300 hover:bg-blue-500 hover:text-white "
+                className="cursor-pointer px-3 py-2 rounded-xl 
+                transition-all duration-300 
+                hover:bg-blue-500 hover:text-white"
               >
                 {item.label}
               </li>
@@ -76,8 +80,9 @@ export default function Navbar() {
 
       {/* Sidebar Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "-translate-x-full"
-          }`}
+        className={`fixed top-0 left-0 h-full w-64 bg-white z-50 
+        transform transition-transform duration-300 
+        ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         {/* Close Button */}
         <div className="flex justify-end p-4">
