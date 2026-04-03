@@ -65,7 +65,7 @@ export default function Gallery({ id }) {
           {/* LEFT ARROW */}
           <button
             onClick={() => scroll("left")}
-            className="absolute left-0 z-10 bg-green-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md"
+            className="absolute left-0 z-10 bg-[#10B981] text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md"
           >
             ←
           </button>
@@ -98,7 +98,7 @@ export default function Gallery({ id }) {
           {/* RIGHT ARROW */}
           <button
             onClick={() => scroll("right")}
-            className="absolute right-0 z-10 bg-green-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md"
+            className="absolute right-0 z-10 bg-[#10B981] text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md"
           >
             →
           </button>
