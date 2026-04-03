@@ -18,7 +18,7 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-[#FFFFFF] border-b border-[#d6d6d6]">
-        <nav className="max-w-[1400px] mx-auto 
+        <nav className="max-w-350 mx-auto 
         px-6 sm:px-8 md:px-12 lg:px-16 
         flex items-center justify-between h-16">
 

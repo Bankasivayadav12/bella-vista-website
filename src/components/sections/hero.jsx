@@ -46,26 +46,34 @@ export default function Hero({ id }) {
 
       {/* BUTTON → RIGHT BOTTOM */}
       {/* 📱 MOBILE → full width bottom */}
-      <div className="absolute bottom-0 left-0 w-full md:hidden z-20 ">
-        <Link href="/contact">
-          <button className="w-full bg-[#10B981] text-white py-4 text-base font-medium">
-            Contact Now
-          </button>
-        </Link>
-      </div>
+      <div className="absolute bottom-0 left-0 w-full md:hidden z-20">
+  <Link href="/contact">
+    <button className="w-full md:w-[80%] lg:w-[50%] xl:w-[60%] 
+    mx-auto block bg-[#10B981] text-white py-4 text-base font-medium rounded-lg">
+      Contact Now
+    </button>
+  </Link>
+</div>
 
-      <div className="hidden md:block absolute bottom-0 right-6 lg:right-12 z-20">
-        <button
-          onClick={() => {
-            const el = document.getElementById("contact");
-            if (el) {
-              el.scrollIntoView({ behavior: "smooth" });
-            }
-          }}
-          className="bg-[#10B981] hover:bg-[#10B981] text-white px-6 py-3 md:px-10 md:py-4 lg:px-40 lg:py-6 text-sm md:text-lg lg:text-xl font-semibold shadow-lg transition rounded-bl-full rounded-br-full rounded-tl-full rounded-tr-none">
-          Contact Now
-        </button>
-      </div>
+<div className="hidden md:block absolute bottom-0 right-6 lg:right-12 z-20">
+  <button
+    onClick={() => {
+      const el = document.getElementById("contact");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }}
+    className="bg-[#10B981] text-white 
+    px-6 py-3 
+    md:px-8 md:py-3 
+    lg:px-12 lg:py-4 
+    xl:px-14 xl:py-5 
+    text-sm md:text-base lg:text-lg xl:text-xl 
+    font-semibold shadow-lg transition 
+    rounded-bl-full rounded-br-full rounded-tl-full rounded-tr-none">
+    Contact Now
+  </button>
+</div>
     </section>
   );
 }
