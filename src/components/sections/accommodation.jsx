@@ -56,7 +56,7 @@ export default function Accommodation({ id }){
                 <div className="w-full h-0.75 bg-linear-to-r from-[#FFFFFF] to-[#10B981] mt-2 rounded-full"></div>
                 </div>
 
-          <p className="text-[#000000] mt-3 max-w-2xl mx-auto text-sm">
+          <p className="text-[#000000] text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
             Bella Vista Extended Stay offers five beautifully designed air-conditioned rooms with modern interiors, attached bathrooms, and private balconies overlooking the river.
           </p>
         </div>

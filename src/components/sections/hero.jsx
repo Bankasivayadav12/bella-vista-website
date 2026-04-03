@@ -19,7 +19,7 @@ export default function Hero({ id }) {
   }, []);
 
   return (
-    <section id={id} className="relative w-full h-[90vh] overflow-hidden">
+    <section id={id} className="relative w-full h-[90vh] overflow-hidden mt-15">
       {/* Background Image */}
       <Image
         src={images[current]}

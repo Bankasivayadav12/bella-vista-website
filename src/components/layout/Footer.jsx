@@ -11,7 +11,7 @@ import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function Footer({ id }) {
   return (
-    <footer id={id} className="bg-white pt-16 md:pt-20 lg:pt-24">
+    <footer id={id} className="bg-white pt-10 md:pt-10 lg:pt-10">
       {/* 🟩 Tagline */}
       <h2 className="text-center text-[#10B981] text-lg sm:text-xl md:text-2xl font-medium mb-8 md:mb-10 px-4">
         Escape the busy city life and enjoy the peaceful charm of the
@@ -20,7 +20,7 @@ export default function Footer({ id }) {
 
       {/* ⬜ MAIN CARD */}
       <div
-        className="bg-[#92929299] rounded-t-[40px] md:rounded-t-[60px] 
+        className="bg-[#929292]/10 rounded-t-[40px] md:rounded-t-[60px] 
       px-5 sm:px-8 md:px-16 py-8 md:py-12 lg:py-14 
       flex flex-col lg:flex-row gap-5 lg:gap-10 items-start"
       >
